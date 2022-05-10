@@ -1,9 +1,73 @@
-
+body{
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
 .title {
+  background-color: lightgray;  
   color: #2800FF;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
   line-height: 105%;
   margin: 0;
+}
+
+img{
+/* top: 0; */ 
+left: 0;
+right: 0;
+/*bottom: 0; */ 
+
+}
+
+.logoDe{
+  position:relative;
+  left:500px;
+  height:150px;
+  width:150px;
+  /*margin: 0 auto;*/
+  z-index: 1;  
+  animation-name: mueveDe;
+  animation-duration: 10s;
+
+}
+.logoIz{
+  position:relative;
+  height:150px;
+  width:150px;
+  margin: 0 auto;
+  z-index:2;
+  animation-name: mueveIz;
+  animation-duration: 10s;
+  
+}
+.logoNom{
+  position:absolute;
+  width:600px;
+  margin:0 auto;
+  z-index: 3;
+  top: 160px;  
+  animation-name: aparece;
+  animation-duration: 10s;
+  /*transition: width 2s;*/
+}
+/*.logoNom:hover{
+  width: 800px;
+}*/
+
+@keyframes mueveIz{
+  0%{left: 325px;}
+  50%{left:325px}
+  100%{left:0}
+}
+@keyframes mueveDe{
+  0%{left: 175px;}
+  50%{left:175px}
+  100%{left:500px}
+}
+@keyframes aparece{
+  0%{width:0px;}
+  50%{width:0px;}
+  100%{width:600px;}
 }
