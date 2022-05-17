@@ -23,7 +23,7 @@ function progresCircule(idCirculo , idPorcentaje , valPorcentaje){
       result = oneProcent * procent;// porcentaje de progreso 
 
 
- nProcent.innerHTML = procent;
+ nProcent.innerHTML = procent + "%";
       
       c.clearRect( 0, 0, can.width, can.height );
 
@@ -69,7 +69,7 @@ function progresCirculeAnimated(idCirculo , idPorcentaje , valPorcentaje){
       c.clearRect( 0, 0, can.width, can.height );
       procent = deegres / oneProcent; //Calcula el porcentaje que va a ir en el medio
 
-      nProcent.innerHTML = procent.toFixed(); // Plasma en el HTML el texto
+      nProcent.innerHTML = procent.toFixed() + "%"; // Plasma en el HTML el texto
 
       c.beginPath();
       c.arc( posX, posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );  // Circulo de abajo

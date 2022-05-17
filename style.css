@@ -9,10 +9,6 @@ span.progres {
   color: #3949AB;
 }
 
-span.progres::after {
-  content: '%';
-}
-
 .canvas-w {
   position: relative;
   width: 200px;
