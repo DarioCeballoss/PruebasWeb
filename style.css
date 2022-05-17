@@ -1,5 +1,5 @@
 
-span#procent {
+span#procent2 {
   display: block;
   position: absolute;
   left: 50%;
@@ -9,12 +9,37 @@ span#procent {
   color: #3949AB;
 }
 
-span#procent::after {
+span#procent2::after {
+  content: '%';
+}
+
+.canvas-wrap2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* SEGUNDO*/
+
+span#procent1234 {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  color: #3949AB;
+}
+
+span#procent1234::after {
   content: '%';
 }
 
 .canvas-wrap {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+}
+body{
+  display: flex;
 }
